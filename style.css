@@ -1,0 +1,53 @@
+/* ====== Gaya Umum ====== */
+body {
+    font-family: Arial, sans-serif;   /* Jenis huruf */
+    background-color: #f2f2f2;        /* Warna latar belakang */
+    margin: 0;                        /* Hilangkan jarak luar default */
+    padding: 0;                       /* Hilangkan jarak dalam default */
+}
+
+/* ====== Bagian Header ====== */
+header {
+    background-color: #2b7a78;        /* Warna biru kehijauan */
+    color: white;                     /* Warna teks */
+    text-align: center;               /* Rata tengah teks */
+    padding: 20px;                    /* Ruang dalam */
+}
+
+header h1 {
+    margin-bottom: 10px;              /* Jarak bawah antar elemen */
+}
+
+/* ====== Konten Utama ====== */
+main {
+    padding: 20px;
+}
+
+/* Bagian Tentang Saya */
+.about {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;               /* Membuat sudut melengkung */
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Bayangan halus */
+}
+
+/* Bagian Hobi */
+.hobby {
+    background-color: #def2f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.hobby ul {
+    list-style-type: square;          /* Ganti bullet list menjadi kotak */
+}
+
+/* ====== Bagian Footer ====== */
+footer {
+    background-color: #17252a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
