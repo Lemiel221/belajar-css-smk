@@ -1,21 +1,23 @@
 /* ====== Gaya Umum ====== */
 body {
-    font-family: Arial, sans-serif;   /* Jenis huruf */
-    background-color: #f2f2f2;        /* Warna latar belakang */
-    margin: 0;                        /* Hilangkan jarak luar default */
-    padding: 0;                       /* Hilangkan jarak dalam default */
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s; /* Efek halus jika latar berubah */
 }
 
 /* ====== Bagian Header ====== */
 header {
-    background-color: #2b7a78;        /* Warna biru kehijauan */
-    color: white;                     /* Warna teks */
-    text-align: center;               /* Rata tengah teks */
-    padding: 20px;                    /* Ruang dalam */
+    background-color: #2b7a78;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    transition: background-color 0.3s;
 }
 
-header h1 {
-    margin-bottom: 10px;              /* Jarak bawah antar elemen */
+header:hover {
+    background-color: #3aafa9; /* Warna berubah saat diarahkan kursor */
 }
 
 /* ====== Konten Utama ====== */
@@ -27,9 +29,15 @@ main {
 .about {
     background-color: #ffffff;
     padding: 15px;
-    border-radius: 8px;               /* Membuat sudut melengkung */
+    border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Bayangan halus */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about:hover {
+    transform: scale(1.02); /* Sedikit membesar saat di-hover */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 /* Bagian Hobi */
@@ -37,10 +45,38 @@ main {
     background-color: #def2f1;
     padding: 15px;
     border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hobby:hover {
+    transform: translateY(-3px); /* Naik sedikit saat hover */
+    background-color: #cce9e8;
 }
 
 .hobby ul {
-    list-style-type: square;          /* Ganti bullet list menjadi kotak */
+    list-style-type: square;
+}
+
+/* ====== Tombol Interaktif ====== */
+.interaction {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-belajar {
+    background-color: #2b7a78;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-belajar:hover {
+    background-color: #3aafa9;
+    transform: scale(1.1); /* Membesar saat di-hover */
 }
 
 /* ====== Bagian Footer ====== */
@@ -49,5 +85,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    background-color: #1b2d33;
 }
