@@ -5,10 +5,3 @@ Semua contoh dalam proyek ini dibuat **sederhana dan interaktif**, sehingga muda
 
 ---
 
-## 📁 Struktur Folder
-
-project-css/
-│
-├── index.html → Halaman utama (HTML)
-├── style.css → Gaya tampilan halaman (CSS)
-└── README.md → Penjelasan proyek
